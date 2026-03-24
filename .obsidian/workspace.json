@@ -4,81 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "56e1585d549cfb05",
-        "type": "split",
+        "id": "94ad03775bbe1fd3",
+        "type": "tabs",
         "children": [
           {
-            "id": "94ad03775bbe1fd3",
-            "type": "tabs",
-            "dimension": 63.438256658595634,
-            "children": [
-              {
-                "id": "c8667e167c78c676",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "PhD-Research/Papers/ACT.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "ACT"
-                }
-              }
-            ]
-          },
-          {
-            "id": "d6b809c2d38729cf",
-            "type": "tabs",
-            "dimension": 36.56174334140436,
-            "children": [
-              {
-                "id": "5ade39515227d71d",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "terminal:terminal",
-                  "state": {
-                    "terminal:terminal": {
-                      "cwd": "/Users/jiadengxu/Library/CloudStorage/GoogleDrive-xujiacheng1016@gmail.com/My Drive/Obsidian/cheng",
-                      "focus": false,
-                      "profile": {
-                        "args": [
-                          "--login"
-                        ],
-                        "executable": "/bin/zsh",
-                        "followTheme": true,
-                        "name": "",
-                        "platforms": {
-                          "darwin": true
-                        },
-                        "pythonExecutable": "python3",
-                        "restoreHistory": false,
-                        "rightClickAction": "copyPaste",
-                        "successExitCodes": [
-                          "0",
-                          "SIGINT",
-                          "SIGTERM"
-                        ],
-                        "terminalOptions": {
-                          "documentOverride": null
-                        },
-                        "type": "integrated",
-                        "useWin32Conhost": true
-                      },
-                      "serial": null
-                    }
-                  },
-                  "pinned": true,
-                  "icon": "terminal",
-                  "title": "Terminal: zsh"
-                }
-              }
-            ]
+            "id": "c8667e167c78c676",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PhD-Research/Papers/ACT.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ACT"
+            }
           }
-        ],
-        "direction": "horizontal"
+        ]
       }
     ],
     "direction": "vertical"
@@ -241,7 +184,7 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "5ade39515227d71d",
+  "active": "c8667e167c78c676",
   "lastOpenFiles": [
     "PhD-Research/Papers/ACT.md",
     "PhD-Research/Concepts/FiLM-Conditioning.md",
