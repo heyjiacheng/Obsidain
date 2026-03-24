@@ -1,0 +1,65 @@
+filters:
+  and:
+    - file.inFolder("PhD-Research/Papers")
+    - file.ext == "md"
+formulas:
+  age_years: (now() - file.ctime).days.round(0)
+  paper_age: if(year, (2026 - year).toString() + " yr ago", "")
+  first_author: if(authors, authors[0], "")
+  has_link: if(link, "🔗", "")
+  tag_count: if(file.tags, file.tags.length, 0)
+properties:
+  title:
+    displayName: Title
+  authors:
+    displayName: Authors
+  formula.first_author:
+    displayName: First Author
+  conference:
+    displayName: Venue
+  year:
+    displayName: Year
+  link:
+    displayName: Link
+  formula.paper_age:
+    displayName: Age
+  formula.has_link:
+    displayName: 🔗
+  formula.tag_count:
+    displayName: "# Tags"
+views:
+  - type: table
+    name: All Papers
+    groupBy:
+      property: conference
+      direction: ASC
+    order:
+      - file.name
+      - year
+      - file.tags
+  - type: table
+    name: By Year
+    groupBy:
+      property: year
+      direction: DESC
+    order:
+      - year
+      - title
+      - formula.first_author
+      - conference
+      - formula.has_link
+  - type: cards
+    name: Card View
+    order:
+      - file.name
+      - title
+      - formula.first_author
+      - conference
+      - year
+      - file.tags
+  - type: list
+    name: Quick List
+    order:
+      - file.name
+      - conference
+      - year

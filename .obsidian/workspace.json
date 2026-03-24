@@ -1,0 +1,285 @@
+{
+  "main": {
+    "id": "75e9e162e5ddb3be",
+    "type": "split",
+    "children": [
+      {
+        "id": "56e1585d549cfb05",
+        "type": "split",
+        "children": [
+          {
+            "id": "94ad03775bbe1fd3",
+            "type": "tabs",
+            "dimension": 63.438256658595634,
+            "children": [
+              {
+                "id": "c8667e167c78c676",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "PhD-Research/Papers/ACT.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "ACT"
+                }
+              }
+            ]
+          },
+          {
+            "id": "d6b809c2d38729cf",
+            "type": "tabs",
+            "dimension": 36.56174334140436,
+            "children": [
+              {
+                "id": "5ade39515227d71d",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "terminal:terminal",
+                  "state": {
+                    "terminal:terminal": {
+                      "cwd": "/Users/jiadengxu/Library/CloudStorage/GoogleDrive-xujiacheng1016@gmail.com/My Drive/Obsidian/cheng",
+                      "focus": false,
+                      "profile": {
+                        "args": [
+                          "--login"
+                        ],
+                        "executable": "/bin/zsh",
+                        "followTheme": true,
+                        "name": "",
+                        "platforms": {
+                          "darwin": true
+                        },
+                        "pythonExecutable": "python3",
+                        "restoreHistory": false,
+                        "rightClickAction": "copyPaste",
+                        "successExitCodes": [
+                          "0",
+                          "SIGINT",
+                          "SIGTERM"
+                        ],
+                        "terminalOptions": {
+                          "documentOverride": null
+                        },
+                        "type": "integrated",
+                        "useWin32Conhost": true
+                      },
+                      "serial": null
+                    }
+                  },
+                  "pinned": true,
+                  "icon": "terminal",
+                  "title": "Terminal: zsh"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4ea6df93558d1d44",
+    "type": "split",
+    "children": [
+      {
+        "id": "5ead79d6bb3171a9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c4997dfe309de3ec",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "4278c82394073210",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#scaling",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "588e8d52676fb060",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7ccb5cc51e9602cc",
+    "type": "split",
+    "children": [
+      {
+        "id": "44cc752469008a23",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "42d633604058b3a7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "PhD-Research/Papers/PointWorld.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for PointWorld"
+            }
+          },
+          {
+            "id": "ceb03158fbcaa028",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Untitled.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Untitled"
+            }
+          },
+          {
+            "id": "3f667ed617d55d0e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "27cc494c7071e92d",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "1022dbf3dd28fa4d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Untitled.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Untitled"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "terminal:Open terminal": false
+    }
+  },
+  "active": "5ade39515227d71d",
+  "lastOpenFiles": [
+    "PhD-Research/Papers/ACT.md",
+    "PhD-Research/Concepts/FiLM-Conditioning.md",
+    "Images/Pasted image 20260321182449.png",
+    "PhD-Research/Papers/3DDiffusionPolicy.md",
+    "CLAUDE.md",
+    "Images/Pasted image 20260322202924.png",
+    "Images",
+    "PhD-Research/Daily/2026-03-24.md",
+    "PhD-Research/Daily/2026-03-23.md",
+    "PhD-Research/Daily/2026-03-16.md",
+    "PhD-Research/Concepts/Denoising Diffusion Probabilistic Models.md",
+    "PhD-Research/Papers/DiffusionPolicy.md",
+    "Papers.base",
+    "PhD-Research/Papers/OpenVlaOft.md",
+    "PhD-Research/Papers/OmniGuide.md",
+    "PhD-Research/Papers/Pi0.5.md",
+    "PhD-Research/Papers/PointWorld.md",
+    "Images/Pasted image 20260322202944.png",
+    "PhD-Research/Concepts/Variational-Autoencoder.md",
+    "PhD-Research/Concepts/Conditional-VAE.md",
+    "PhD-Research/Concepts/KL-Divergence.md",
+    "PhD-Research/Concepts/MLP-MaxPool-PointCloud-Encoder.md",
+    "PhD-Research/Papers/RoboticsDiffusionTransformer.md",
+    "PhD-Research/Papers/GigaBrainRamp.md",
+    "PhD-Research/Papers/ActionChunkingWithTransformers.md",
+    "PhD-Research/Papers/SoMA.md",
+    "PhD-Research/Papers/Sonic.md",
+    "PhD-Research/Papers/DreamDojo.md",
+    "PhD-Research/Papers/Pi0.md",
+    "pi0.md",
+    "PhD-Research/Concepts",
+    "Untitled 1.base",
+    "Untitled.base",
+    "PhD-Research/Research.base",
+    "PhD-Research/Papers/old",
+    "PhD-Research/Papers/new",
+    "Life",
+    "PhD-Research/Templates"
+  ]
+}
