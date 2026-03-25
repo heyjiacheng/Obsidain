@@ -101,7 +101,7 @@ Evaluated on **7 real-robot tasks** against ACT, OpenVLA, Octo on ALOHA dual-arm
 
 ## Connections
 
-- [[DiffusionPolicy]] — predecessor diffusion policy work; RDT scales and adapts DiT for multimodal robot inputs
+- [[Diffusion Policy]] — predecessor diffusion policy work; RDT scales and adapts DiT for multimodal robot inputs
 - [[ACT]] — key bimanual baseline (VAE-based); fails on multi-modality, no instruction following
 - [[Octo]] — diffusion foundation model with 93M params; RDT is its large-scale successor
 - [[OpenVLA]] — 7B VLA baseline; discretization of actions hurts precision for dexterous tasks

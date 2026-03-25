@@ -85,7 +85,7 @@ $$
 
 ## Connections
 
-- [[DiffusionPolicy]] — Chi et al.; DP3 replaces 2D encoder with 3D point cloud encoder
+- [[Diffusion Policy]] — Chi et al.; DP3 replaces 2D encoder with 3D point cloud encoder
 - [[PointNet]] / PointNet++ — pretrained 3D encoders; DP3's simple MLP outperforms them here
 - [[ACT]] — another imitation learning baseline compared in experiments
 - [[3D robot learning]] — broader trend of lifting robot perception into 3D space

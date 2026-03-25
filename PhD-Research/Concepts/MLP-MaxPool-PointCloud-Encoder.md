@@ -51,7 +51,7 @@ This encoder solves both.
 
 ## Why No Color?
 
-[[3DDiffusionPolicy|DP3]] deliberately drops RGB and uses **geometry only**. This means:
+[[3D Diffusion Policy|DP3]] deliberately drops RGB and uses **geometry only**. This means:
 
 - The encoder can't tell what color an object is
 - It can only tell where things are in 3D space
@@ -81,5 +81,5 @@ The 64-dim vector is then concatenated with the robot's joint positions and fed 
 
 ## Related
 
-- [[3DDiffusionPolicy]] — paper that introduced this encoder design
+- [[3D Diffusion Policy]] — paper that introduced this encoder design
 - [[PointNet]] — the foundational idea this simplifies

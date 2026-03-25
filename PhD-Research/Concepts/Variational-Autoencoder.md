@@ -120,4 +120,4 @@ This tension forces the model to learn a *structured* latent space — similar i
 - [[KL-Divergence]] — the regularization term that shapes the latent space
 - [[Conditional-VAE]] — extends VAE by conditioning all distributions on an observed variable
 - [[ACT]] — uses a CVAE variant to handle multi-modal human demonstrations in robotics
-- [[DiffusionPolicy]] — alternative generative approach that trades speed for sample quality
+- [[Diffusion Policy]] — alternative generative approach that trades speed for sample quality

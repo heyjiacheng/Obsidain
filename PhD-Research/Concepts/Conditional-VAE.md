@@ -97,4 +97,4 @@ In [[ACT]], the CVAE is used to handle multimodality in human teleoperation demo
 
 - [[KL-Divergence]] — the regularization term that keeps the encoder close to the prior
 - [[ACT]] — uses CVAE to handle human demonstration variability in bimanual manipulation
-- [[DiffusionPolicy]] — alternative approach to multimodal action generation using iterative denoising
+- [[Diffusion Policy]] — alternative approach to multimodal action generation using iterative denoising

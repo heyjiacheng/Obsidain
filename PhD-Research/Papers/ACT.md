@@ -50,14 +50,14 @@ ACT is trained as a [[Conditional-VAE|Conditional VAE]] to model stochasticity i
 
 The CVAE encoder only serves to train the CVAE decoder (the policy) and is discarded at test time.
 
-Specifically, the CVAE encoder predicts the mean and variance of the style variable z’s distribution, which is parameterized as a diagonal Gaussian, given the current observation and action sequence as inputs.
+Specifically, the CVAE encoder predicts the mean and variance of the style variable z’s distribution, which is parameterized as a diagonal Gaussian.
 
 The CVAE decoder, i.e. the policy, conditions on both z and the current observations (images + joint positions) to predict the action sequence.
 
 - **Encoder:** BERT-style transformer — takes `[CLS]` token (mean and variance of the “style
 variable” z) + joint positions + action sequence; outputs $\mu, \sigma$ of style variable $z$ (latent variable for human behavior).
 - **Decoder (policy):** ResNet18 encodes 4× RGB images → 300×512 features; fused with joints and $z$ via transformer encoder; transformer decoder generates $k \times 14$ actions (14 = 7 DoF × 2 arms)
-- **Loss:** L1 reconstruction + $\beta$-weighted KL to $\mathcal{N}(0, I)$
+- **Loss:** L1 reconstruction + $\beta$-weighted KL to $\mathcal{N}(0, I)$ (higher $\beta$ will result in less information transmitted in z)
 - At test time: $z$ is fixed to the prior mean (zero). Discard $z$ and encoder, human motion preference will be remember as weight of decoder.
 
 ![[Pasted image 20260321182449.png]]
@@ -87,13 +87,13 @@ variable” z) + joint positions + action sequence; outputs $\mu, \sigma$ of sty
 
 ## My Ideas
 
-- ACT is essentially a diffusion-free generative policy — how does it compare to [[DiffusionPolicy]]?
+- ACT is essentially a diffusion-free generative policy — how does it compare to [[Diffusion Policy]]?
 - The CVAE style variable $z$ encodes "which mode of demonstration" — could this be used for skill discovery?
 - The variable $z$ can set to other value, like some value relate to image? or just gaussian distribution.
 
 ## Connections
 
-- [[DiffusionPolicy]] — contemporaneous work on generative imitation learning; both avoid discretization
+- [[Diffusion Policy]] — contemporaneous work on generative imitation learning; both avoid discretization
 - [[BehaviorTransformers]] (BeT) — baseline here; ACT outperforms substantially
 - [[RT1]] — another baseline; trained on much larger datasets but fails here on fine tasks
 - [[VINN]] — non-parametric nearest-neighbor baseline; surprisingly competitive on some tasks
