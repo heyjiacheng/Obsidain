@@ -20,7 +20,8 @@ aliases:
 
 
 > [!question] Problem
-> **Compounding errors** in imitation learning: small prediction mistakes accumulate over time, driving the robot out-of-distribution. Human demonstrations are also non-Markovian (pauses, variable handover positions), making single-step policies brittle.
+> **Compounding errors** in imitation learning: small prediction mistakes accumulate over time, driving the robot out-of-distribution. 
+> **Human demonstrations** are also non-Markovian (pauses, variable handover positions), making single-step policies brittle.
 
 ## Key Idea
 

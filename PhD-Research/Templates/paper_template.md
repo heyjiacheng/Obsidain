@@ -13,6 +13,7 @@ aliases: []
 
 ## Problem
 What problem does this paper solve?
+Keep concise, clear, and as close to the essence as possible.
 
 ## Key Idea
 What is the main idea?

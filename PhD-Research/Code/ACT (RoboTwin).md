@@ -5,6 +5,74 @@ tags:
   - ACT
   - robotwin
 ---
+# pseudocode
+
+```python
+main():
+	load_data()
+	train()
+
+load_data()
+	random_pick(0, last_action):
+	return imgs, qpos, action, is_padding
+
+build():
+	encoder_1 = Transformer_Encoder(layer, d=256)
+	transfomer = Transformer(encoder_1, d=256)
+	encoder_2 = Joiner(Resnet18, sinusodial_2D)
+	model = CVAE(transfomer, encoder_2, num_quires=k, heads)
+	optimizer = Adam([non-encoder_2, lr], [encoder_2, encoder_lr])
+
+forward():
+	-- latent action --
+	if_train:
+		enc_1_input = cat([CLS], qpos, action)
+		enc_1_out = enc_1(enc_1_input, sinous_pos)
+		mu, logvar = enc_1_out
+		z = distr(mu, logvar)
+
+	else:
+		-- for deterministic action --	
+		z = random or 0
+	
+	-- vision --
+	
+	for each camera:
+		feat = append.encoder_2(imgs)
+	src = cat(feat)
+	proprio = proj(src)
+	
+	src = flatten(src)
+	src = cat(stack(proprio + latent), src)
+	src = cat(src, sin_pos)
+
+	-- decode --
+		
+	memory = encoder(src+pos)
+	fix_query = zeros
+	action = decoder(memory, fix_query)
+
+train():
+	-- validation --
+	forward()
+	eval()
+	
+	-- train --
+	loss = forward()
+	zero_gradient()
+	loss.backward()
+	optimizer()
+
+```
+
+
+
+
+
+
+For each style, the model does not explicitly generate a separate Gaussian distribution for z. Instead, after training, different styles may occupy different regions within a shared Gaussian latent space.
+
+
 
 # process_data.sh
 
@@ -53,17 +121,17 @@ Each task config provides:
 
 For the ACT policy (lines 66–82):
 
-| Parameter | Default | Role |
-|---|---|---|
-| `num_queries` | `chunk_size` | Number of future action steps predicted at once |
-| `kl_weight` | user-specified | Weight for the KL divergence loss term in the CVAE |
-| `hidden_dim` | user-specified | Transformer hidden dimension |
-| `dim_feedforward` | user-specified | Transformer FFN intermediate dimension |
-| `enc_layers` | 4 | Transformer encoder layers |
-| `dec_layers` | 7 | Transformer decoder layers |
-| `nheads` | 8 | Attention heads |
-| `backbone` | `"resnet18"` | CNN backbone for image feature extraction |
-| `lr_backbone` | 1e-5 | Separate (lower) learning rate for the pretrained backbone |
+| Parameter         | Default        | Role                                                       |
+| ----------------- | -------------- | ---------------------------------------------------------- |
+| `num_queries`     | `chunk_size`   | Number of future action steps predicted at once            |
+| `kl_weight`       | user-specified | Weight for the KL divergence loss term in the CVAE         |
+| `hidden_dim`      | user-specified | Transformer hidden dimension                               |
+| `dim_feedforward` | user-specified | Transformer FFN intermediate dimension                     |
+| `enc_layers`      | 4              | Transformer encoder layers                                 |
+| `dec_layers`      | 7              | Transformer decoder layers                                 |
+| `nheads`          | 8              | Attention heads                                            |
+| `backbone`        | `"resnet18"`   | CNN backbone for image feature extraction                  |
+| `lr_backbone`     | 1e-5           | Separate (lower) learning rate for the pretrained backbone |
 
 **Step 3 — Dispatch**
 
@@ -105,6 +173,7 @@ Instantiates `ACTPolicy` or `CNNMLPPolicy`. The policy `nn.Module`:
 - Encodes images through a ==ResNet-18 backbone==
 - Encodes joint positions through a ==linear projection==
 - (ACT only) Uses a Transformer encoder-decoder with a ==CVAE latent variable==
+- other parameter in deploy_policy.yml
 
 ### `make_optimizer()` — Lines 151–158
 
@@ -403,4 +472,4 @@ raw_action = (actions_for_curr_step * exp_weights).sum(dim=0, keepdim=True)
 
 # eval.sh
 
-change latent action variab
+

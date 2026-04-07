@@ -76,4 +76,4 @@ Additional inputs (wrist camera images, proprioceptive state) are supported by p
 - [[Diffusion Policy]] — Diffusion-based action generation is a key baseline; OFT shows L1 regression can match it with simpler training.
 - [[OpenVLA]] — Base model that OFT builds upon.
 - [[FiLM-Conditioning|FiLM]] — Feature-wise linear modulation used for language grounding in the OFT+ variant.
-- [[Pi0]] — Flow-matching VLA that is the strongest baseline in both LIBERO and ALOHA experiments.
+- [[PhD-Research/Papers/Pi0]] — Flow-matching VLA that is the strongest baseline in both LIBERO and ALOHA experiments.

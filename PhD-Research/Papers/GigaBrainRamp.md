@@ -123,7 +123,7 @@ Multi-task training with WM conditioning shows progressively larger gains over b
 ## Connections
 
 - [[RECAP]] / [[pi0.6]] — advantage-conditioned RL baseline; RAMP generalizes it
-- [[pi0]] / [[pi0.5]] — strong VLA baselines from Physical Intelligence
+- [[PhD-Research/Papers/Pi0]] / [[pi0.5]] — strong VLA baselines from Physical Intelligence
 - [[GR00T]] / [[GR-3]] — competing VLA systems
 - [[Cosmos]] — world model for robot policy (cosmospolicy uses latent frame injection, same idea)
 - [[DAgger]] — online imitation learning; HILR is spiritually related

@@ -16,7 +16,6 @@ aliases:
 
 # Diffusion Policy: Visuomotor Policy Learning via Action Diffusion
 
-state 定义
 
 ## Problem
 
