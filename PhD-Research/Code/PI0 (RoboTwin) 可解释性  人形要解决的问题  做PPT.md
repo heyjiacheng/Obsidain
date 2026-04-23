@@ -10,6 +10,8 @@ aliases:
   - Physical Intelligence 0
 ---
 
+展示sonic 和IK 区别，先说问题，（之前工作有什么问题），把故事说清楚
+
 # PI0 (RoboTwin)
 
 ## 1. Overview

@@ -13,7 +13,8 @@ aliases: []
 
 ## Problem
 What problem does this paper solve?
-Keep concise, clear, and as close to the essence as possible.
+Keep concise, clear, and close to the essence.
+formulate problems into mathematics.
 
 ## Key Idea
 What is the main idea?
@@ -22,16 +23,16 @@ What is the main idea?
 How does the method work?
 
 ## Why it works
-
+Analyzing from a principle-based perspective.
 
 ## Weakness
 Where could this fail?
 
 ## Experiments
-What did they evaluate?
+What did they evaluate? (As short as possible for this part)
 
 ## My Ideas
-Possible extensions.
+Possible extensions. (only 1 or 2)
 
 ## Connections
 Related papers or ideas.
