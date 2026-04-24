@@ -10,8 +10,20 @@ aliases: [Psi0, Psi-Zero, PsiZero]
 
 # Ψ₀ (Psi-Zero): An Open Foundation Model Towards Universal Humanoid Loco-Manipulation
 
-## Problem
-How can we train a humanoid VLA for long-horizon dexterous loco-manipulation when teleoperation data is scarce and human egocentric videos have a large embodiment gap?
+## Problem 1: Robot data is expensive
+### Why it matters
+Humanoid loco-manipulation tasks across 43 degrees of freedom. Collecting teleoperation data at pi0 scale is infeasible.
+### The Bottleneck
+Human egocentric videos are abundant and free — but direct transfer to robot control is blocked by the embodiment gap: different kinematics, DoF, motion frequencies, and action distributions.
+
+## Solution 1
+
+Pre-train a VLM on **human egocentric manipulation video** 
+- **Unified action space**: shared representation for human hands and robot end-effectors — 48-DoF wrist pose + fingertip positions
+- **FAST tokenizer**: compresses 48 tokens → ~20 discrete tokens (L1 loss ≈ 0.005)
+- **Single-step prediction**: predict only the next action token — keeps pre-training compute tractable
+
+
 
 Existing co-training strategies force a **single monolithic policy** to model two fundamentally different action distributions (human vs. humanoid), which is suboptimal despite large data volumes.
 
@@ -47,9 +59,9 @@ $$
 - Freeze VLM, train action expert from scratch in **joint space** (36-DoF).
 - Flow-matching objective:
 $$
-\mathcal{L}_{fm} = \mathbb{E}\left[\lVert v_\rho^{flow}(\mathbf{z}_t, \mathbf{a}_t^\tau, \tau) - (\bm\epsilon - \mathbf{a}_t) \rVert\right]
+\mathcal{L}_{fm} = \mathbb{E}\left[\lVert v_\rho^{flow}(\mathbf{z}_t, \mathbf{a}_t^\tau, \tau) - (\mathbf\epsilon - \mathbf{a}_t) \rVert\right]
 $$
-where $\mathbf{a}_t^\tau = \tau \mathbf{a}_t + (1-\tau)\bm\epsilon$.
+where $\mathbf{a}_t^\tau = \tau \mathbf{a}_t + (1-\tau)\mathbf\epsilon$.
 - MM-DiT: time $\tau$ separately modulates action and VL features; action and VL tokens perform **joint global attention** within each block.
 
 **Stage 3 — Task-specific fine-tuning**

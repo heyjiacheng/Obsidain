@@ -108,10 +108,10 @@ MPPI samples EEF trajectories → rolls out dynamics with PointWorld → refines
 
 
 ### Ablations
-| Choice | Winner |
-|--------|--------|
+| Choice                | Winner                                     |
+| --------------------- | ------------------------------------------ |
 | Action representation | Gripper-only flows > whole-body or low-dim |
-| Prediction mode | 10-step chunked > autoregressive |
+| Prediction mode       | 10-step chunked > autoregressive           |
 
 
 ---

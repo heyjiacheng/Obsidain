@@ -14,7 +14,6 @@ aliases:
   - ACT
   - ALOHA
 ---
-
 # Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware
 
 
