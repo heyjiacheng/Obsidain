@@ -10,22 +10,40 @@ aliases: [Psi0, Psi-Zero, PsiZero]
 
 # Ψ₀ (Psi-Zero): An Open Foundation Model Towards Universal Humanoid Loco-Manipulation
 
-## Problem 1: Robot data is expensive
-### Why it matters
-Humanoid loco-manipulation tasks across 43 degrees of freedom. Collecting teleoperation data at pi0 scale is infeasible.
-### The Bottleneck
-Human egocentric videos are abundant and free — but direct transfer to robot control is blocked by the embodiment gap: different kinematics, DoF, motion frequencies, and action distributions.
+## Problem 1: Embodied Gap
 
-## Solution 1
+Existing methods (such as EgoVLA, In-n-On, and H-RDT) leverage human data by co-training a unified strategy on human videos and robot data
 
-Pre-train a VLM on **human egocentric manipulation video** 
-- **Unified action space**: shared representation for human hands and robot end-effectors — 48-DoF wrist pose + fingertip positions
-- **FAST tokenizer**: compresses 48 tokens → ~20 discrete tokens (L1 loss ≈ 0.005)
-- **Single-step prediction**: predict only the next action token — keeps pre-training compute tractable
+There are fundamental differences between humans and humanoid robots in terms of action frequency, and degrees of freedom (DoF); 
 
+therefore, a single monolithic policy that attempts to model two fundamentally different action distributions simultaneously is suboptimal.
 
+## Solution 1: Decoupled Staged Training
 
-Existing co-training strategies force a **single monolithic policy** to model two fundamentally different action distributions (human vs. humanoid), which is suboptimal despite large data volumes.
+Stage 1 (Pre-training VLM): Autoregressively pre-train Qwen3-VL-2B-Instruct on EgoDex (~829 hours of egocentric human video) using a human-robot unified 48-DoF task-space representation (9-DoF wrist pose + 3D positions of 5 fingertips), with the goal of learning task semantics and visual representations
+
+Stage 2 (Post-training Action Expert): Freeze the VLM and train a flow-based action expert from scratch to predict action chunks directly in 36-DoF joint space, using the Humanoid Everyday dataset. (side question: does it need to be 8 dof lower body actions??)
+
+Stage 3 (Fine-tuning): Fine-tune the action expert on 80 teleoperation trajectories for each downstream task
+
+## Problem 2: Excessive Pre-training Computing
+
+Having the VLM make autoregressive predictions for high-dimensional action chunks is computationally expensive and significantly slows down training.
+
+## Solution 2: Tokenizer
+Use the FAST tokenizer to discretize continuous actions, and retrain the tokenizer on 500,000 sampled actions from EgoDex (L1 reconstruction loss reduced from 0.01 to 0.005, with each action compressed to ~20 tokens)
+Predict only the next-step action $a_t$
+at​ rather than the action chunk $a_{t:t+H}$
+
+## Problem 3: Efficiency of VL Feature and Action Feature Fusion
+cross-attention receive condition is desined for text-conditioned
+## Solution 3: MM DiT
+ adopt the MM-DiT architecture 
+
+## Problem 4: Inference Delay
+
+## Solution 4:
+Training time RTC
 
 Formally, given a language instruction $\ell$ and observation $\mathbf{o}_t = (\mathbf{I}_t, \mathbf{q}_t)$, predict whole-body action chunk $\mathbf{a}_{t:t+H}$ where $\mathbf{a} \in \mathbb{R}^{36}$ comprises hand, arm, torso, base height, and locomotion velocities.
 

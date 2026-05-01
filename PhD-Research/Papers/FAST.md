@@ -19,7 +19,7 @@ aliases:
 # FAST: Efficient Action Tokenization for Vision-Language-Action Models
 
 ## Problem 1
-Autoregressive VLAs discretize continuous actions via **per-dimension, per-timestep binning** (e.g., [[OpenVLA]], RT-2). On high-frequency data (20–50 Hz), this fails completely: adjacent tokens become nearly identical, so the marginal information of token $T_i$ given $T_{1:i-1}$ approaches zero. The model collapses to "copy the previous token" and never fits the underlying signal.
+Autoregressive VLAs discretize continuous actions via **per-dimension, per-timestep binning** (e.g., [[OpenVLA]], RT-2). On high-frequency data (20–50 Hz), this fails completely: adjacent tokens become nearly identical.
 
 ## Solution 1
 **Compress actions before tokenization** so each token carries high marginal information. FAST applies the **Discrete Cosine Transform (DCT)** to each action dimension, which concentrates energy in a few low-frequency coefficients.

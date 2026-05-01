@@ -15,12 +15,15 @@ aliases:
 ## Goal
 Enable VR teleoperation for humanoid bimanual manipulation and collect robot learning dataset.
 
-## Quick Start
+## SONIC Teleoperate
 
 Real VR teleoperate:
 
 1.  运行deploy.sh 一定要在机器人上！
 2. VR APP需要连接在机器人的ip 地址上
+3. press A+B+X+Y simultaneously
+4. press A+X
+5. press A+B+X+Y for emergent stop (or press o in gear_sonic_deploy terminal)
 
 
 Simulation VR teleoperate:
@@ -36,5 +39,14 @@ Simulation VR teleoperate:
 9. then, press 9 on mujoco page
 10. press A+B+X+Y for emergent stop (or press 0 in gear_sonic_deploy terminal)
 
-## Next Steps
+## Psi-0 Teleoperate
+
+### Env
+1. pip install opencv (remove opencv-headless, and install same version one)
+2. conda install gst-plugins-ugly
+
+### quick start
+1. don't need open xr app in host computer
+2. still need to test, the joy stick on vr controller
+
 - [ ]  collect dataset on [lerobot](https://huggingface.co/docs/lerobot/unitree_g1) 
