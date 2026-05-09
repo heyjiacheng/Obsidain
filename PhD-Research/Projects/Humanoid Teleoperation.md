@@ -19,12 +19,13 @@ Enable VR teleoperation for humanoid bimanual manipulation and collect robot lea
 ## SONIC Training
 
 1. Put two robots hands in front of the robot
-2. 运行整个代码都在PC上
-3. VR APP需要连接在PC的ip 地址上: 192.168.0.108
-4. press A+B+X+Y simultaneously
-5. press A+X
-6. press A+B+X+Y for emergent stop (or press o in gear_sonic_deploy terminal)
-7. press left grip button and A to record (press again to stop, left grip button and B to discard)
+2. connect ethernet on PC (set 192.168.123.123  mask: 255.255.255.0)
+3. 运行整个代码都在PC上
+4. VR APP需要连接在PC的ip 地址上: 192.168.0.108
+5. press A+B+X+Y simultaneously
+6. press A+X
+7. press A+B+X+Y for emergent stop (or press o in gear_sonic_deploy terminal)
+8. press left grip button and A to record (press again to stop, left grip button and B to discard)
 
 ## SONIC Teleoperate
 
