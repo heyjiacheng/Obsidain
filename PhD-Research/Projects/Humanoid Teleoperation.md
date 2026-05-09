@@ -15,15 +15,27 @@ aliases:
 ## Goal
 Enable VR teleoperation for humanoid bimanual manipulation and collect robot learning dataset.
 
+
+## SONIC Training
+
+1. Put two robots hands in front of the robot
+2. 运行整个代码都在PC上
+3. VR APP需要连接在PC的ip 地址上: 192.168.0.108
+4. press A+B+X+Y simultaneously
+5. press A+X
+6. press A+B+X+Y for emergent stop (or press o in gear_sonic_deploy terminal)
+7. press left grip button and A to record (press again to stop, left grip button and B to discard)
+
 ## SONIC Teleoperate
 
 Real VR teleoperate:
 
-1.  运行deploy.sh 一定要在机器人上！
-2. VR APP需要连接在机器人的ip 地址上: 192.168.0.130
-3. press A+B+X+Y simultaneously
-4. press A+X
-5. press A+B+X+Y for emergent stop (or press o in gear_sonic_deploy terminal)
+1. Put two robots hands in front of the robot
+2. 运行deploy.sh 一定要在机器人上！
+3. VR APP需要连接在机器人的ip 地址上: 192.168.0.130
+4. press A+B+X+Y simultaneously
+5. press A+X
+6. press A+B+X+Y for emergent stop (or press o in gear_sonic_deploy terminal)
 
 
 Simulation VR teleoperate:
