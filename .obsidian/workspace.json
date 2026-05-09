@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PhD-Research/Projects/Review Paper.md",
+                "file": "PhD-Research/Projects/Humanoid Teleoperation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Review Paper"
+              "title": "Humanoid Teleoperation"
             }
           }
         ]
@@ -201,21 +201,27 @@
   },
   "active": "856964bab7d85158",
   "lastOpenFiles": [
+    "Life/减压.md",
     "PhD-Research/Projects/Humanoid Teleoperation.md",
+    "PhD-Research/Papers/AMO.md",
     "PhD-Research/Projects/Review Paper.md",
+    "PhD-Research/Papers/PsiZero.md",
+    "PhD-Research/Papers/DreamDojo.md",
+    "Study/Generative Model.md",
+    "Study",
+    "PhD-Research/Templates/claude prompt.md",
+    "PhD-Research/Code/LeWM.md",
+    "PhD-Research/Code/PI0 (RoboTwin) 可解释性  人形要解决的问题  做PPT.md",
     "PhD-Research/Ideas/Humanoid Teleoperation Dataset.md",
     "PhD-Research/Problems/Robot data expensive.md",
     "PhD-Research/Papers/FAST.md",
     "PhD-Research/Papers/TrainingTimeRTC.md",
-    "PhD-Research/Papers/PsiZero.md",
-    "PhD-Research/Code/PI0 (RoboTwin) 可解释性  人形要解决的问题  做PPT.md",
     "PhD-Research/Problems",
     "PhD-Research/Templates/paper_template.md",
     "PhD-Research/Ideas/read paper workflow.md",
     "PhD-Research/Papers/RT-X.md",
     "Life/酒吧计划.md",
     "PhD-Research/Papers/PointWorld.md",
-    "PhD-Research/Templates/claude prompt.md",
     "Pasted image 20260422215330.png",
     "PhD-Research/Papers/Sonic.md",
     "PhD-Research/Papers/OmniGuide.md",
@@ -223,12 +229,7 @@
     "PhD-Research/Papers/OpenVlaOft.md",
     "PhD-Research/Papers/Diffusion Policy.md",
     "PhD-Research/Papers/DDPM.md",
-    "PhD-Research/Papers/DreamDojo.md",
     "PhD-Research/Papers/Octo.md",
-    "PhD-Research/Papers/AMO.md",
-    "PhD-Research/Papers/LeWorldModel.md",
-    "PhD-Research/Papers/SoMA.md",
-    "PhD-Research/Papers/RoboticsDiffusionTransformer.md",
     "Papers.base",
     "PhD-Research/Code",
     "Recording 20260324165315.m4a",
@@ -239,7 +240,6 @@
     "Images/Pasted image 20260321182449.png",
     "Images/Pasted image 20260322202924.png",
     "Images",
-    "Images/Pasted image 20260322202944.png",
-    "PhD-Research/Concepts"
+    "Images/Pasted image 20260322202944.png"
   ]
 }

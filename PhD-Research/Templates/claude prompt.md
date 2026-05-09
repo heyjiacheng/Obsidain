@@ -1,6 +1,6 @@
 
 ```bash
-@policy/pi0/finetune.sh read the entire training code base and explain the main training algorithm in detail,  output a markdown file, explain training procedure correspoding code, write a compact pseudocode in the end. 
+@policy/pi0/finetune.sh read the entire training and finetunning code base and explain the main algorithm in detail,  output a markdown file, explain training procedure correspoding code, write a compact pseudocode in the end. 
 ```
 
 
