@@ -15,6 +15,13 @@ aliases:
 ## Goal
 Enable VR teleoperation for humanoid bimanual manipulation and collect robot learning dataset.
 
+## SONIC+GR00T task
+put apple on the plate
+
+apple and plate on the same table (table at lowest heigh)
+at start camera should see both apple and plate (can adjust small table height)
+walk few steps to reach the table, bend down to reach the apples and the plate
+
 
 ## SONIC Training
 
