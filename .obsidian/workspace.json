@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PhD-Research/Projects/Humanoid Teleoperation.md",
+                "file": "PhD-Research/Ideas/Humanoid Teleoperation Dataset.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Humanoid Teleoperation"
+              "title": "Humanoid Teleoperation Dataset"
             }
           }
         ]
@@ -201,15 +201,18 @@
   },
   "active": "856964bab7d85158",
   "lastOpenFiles": [
-    "PhD-Research/Papers/ACT.md",
+    "PhD-Research/Ideas/Egoview-Only VLA in Robot Manipulation.md",
     "PhD-Research/Projects/Humanoid Teleoperation.md",
+    "Study/Generative Model.md",
+    "PhD-Research/Papers/TrainingTimeRTC.md",
+    "PhD-Research/Papers/Diffusion Policy.md",
+    "PhD-Research/Papers/ACT.md",
     "PhD-Research/Papers/Sonic.md",
     "Life/减压.md",
     "PhD-Research/Papers/AMO.md",
     "PhD-Research/Projects/Review Paper.md",
     "PhD-Research/Papers/PsiZero.md",
     "PhD-Research/Papers/DreamDojo.md",
-    "Study/Generative Model.md",
     "Study",
     "PhD-Research/Templates/claude prompt.md",
     "PhD-Research/Code/LeWM.md",
@@ -217,7 +220,6 @@
     "PhD-Research/Ideas/Humanoid Teleoperation Dataset.md",
     "PhD-Research/Problems/Robot data expensive.md",
     "PhD-Research/Papers/FAST.md",
-    "PhD-Research/Papers/TrainingTimeRTC.md",
     "PhD-Research/Problems",
     "PhD-Research/Templates/paper_template.md",
     "PhD-Research/Ideas/read paper workflow.md",
@@ -228,8 +230,6 @@
     "PhD-Research/Papers/OmniGuide.md",
     "PhD-Research/Papers/OpenVLA.md",
     "PhD-Research/Papers/OpenVlaOft.md",
-    "PhD-Research/Papers/Diffusion Policy.md",
-    "PhD-Research/Papers/DDPM.md",
     "Papers.base",
     "PhD-Research/Code",
     "Recording 20260324165315.m4a",

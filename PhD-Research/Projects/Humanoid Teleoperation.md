@@ -16,12 +16,21 @@ aliases:
 Enable VR teleoperation for humanoid bimanual manipulation and collect robot learning dataset.
 
 ## SONIC+GR00T task
-put apple on the plate
+put sponge on the plate
 
-apple and plate on the same table (table at lowest heigh)
-at start camera should see both apple and plate (can adjust small table height)
-walk few steps to reach the table, bend down to reach the apples and the plate
+sponge and plate on the same table (table at lowest height)
+at start camera should see both sponge and plate (can adjust small table height)
+walk few steps to reach the table, bend down to reach the sponge and the plate
+walk back to start next session
 
+## SONIC Teleoperation
+
+1. start record then press A + X
+2. finish record right after finish manipulate task
+3. every time reach the table, do bending! (otherwise camera can't see items)
+4. if sponge on the left, use left arm. if sponge on the right, use right arm.
+5. before start, move robot head from button to up, until hear click
+6. no need to always rise hands
 
 ## SONIC Training
 
