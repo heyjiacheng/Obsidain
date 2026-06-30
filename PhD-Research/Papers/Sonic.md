@@ -13,7 +13,7 @@ link: https://arxiv.org/abs/2511.07820
 aliases:
   - SONIC
 ---
-
+ 
 # SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body Control
 
 

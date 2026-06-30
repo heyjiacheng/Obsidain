@@ -20,7 +20,7 @@ When the user provides an arXiv URL, follow these steps:
 
 3. Derive the output filename from the paper title using PascalCase, and make it simple.
 
-4. Write the completed note to:
+4. Write the completed note to (no need to read existing paper notes, just write the new one):
    `PhD-Research/Papers/<filename>.md`
 
 5. refine this markdown note.
