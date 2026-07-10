@@ -14,15 +14,29 @@ aliases:
   - OpenHLM
 ---
 # Research Question
-What does it take to build a whole-body *native* VLA that maps language and pixels directly to **all** of a humanoid's degrees of freedom, instead of decoupling the upper and lower body into separate controllers?
+What does it take to build a whole-body *native* VLA control humanoid's degrees of freedom?
+
+- VR Control Signals? Decoupled; Joint-based; SMPL
+- robot-data pretraining?
+- action format?
+- 1 step denoising?
+- whole-body teleop? HuMI?
 
 # Motivation
-Most humanoid systems drive arms with IK and legs with a separate RL controller, reducing the robot to a wheeled dual-arm platform and excluding behaviors that recruit the lower body as a manipulator (e.g. squatting to a low shelf, pressing a pedal with the foot).
+Need humanoid VLA, systematically research.
 
 # Method
-A systematic one-variable-at-a-time empirical study over three phases on the **HLM-12** benchmark: (1) controller & teleop — joint-based whole-body teleoperation (mocap retargeted online to robot joints, 0.2 s preview latency); (2) VLA design — adapt a [[Pi05|π0.5]]-initialized backbone via weight-surgery action projection, absolute joint targets, proprioception input, multi-step flow matching; (3) heterogeneous co-training — mix in cheap stationary teleop and [[HuMI]] (humanoid analog of UMI) to extend coverage without more whole-body teleop.
+A systematic one-variable-at-a-time empirical study over three phases on the **HLM-12** benchmark: (1) controller & teleop — joint-based whole-body teleoperation (mocap retargeted online to robot joints); (2) VLA design — adapt a [[Pi05|π0.5]]-initialized backbone via weight-surgery action projection, absolute joint targets, proprioception input, multi-step flow matching; (3) heterogeneous co-training — mix in cheap stationary teleop and [[HuMI]] (humanoid analog of UMI) to extend coverage without more whole-body teleop.
 
 # Limitation
+If a VLA can't run on a humanoid, nor video-action model. Because video-action model can't solve following question:
+
+humanoid has higher dimension of DoF than dual arm.
+pi0.5 tuned VLM perform better than PaliGemma-initialized (pure VLM, no robot data), pi0.5 has manipulation prior: see error, retry.
+
+HuMI half operate-time, but semantic supervision rather than motion supervision (human motion, not robot motion, even after IK)
+
+
 
 # Summary
 Getting the *design details* right — teleop interface, VLA adaptation, and cheap-data co-training — matters more than scaling humanoid data or model size: a π0.5-backbone trained with **zero** humanoid pretraining data beats GR00T N1.6 and Ψ0 (which both include humanoid data in pretraining) on a long-horizon task at less than half the demonstration time, and action MSE is a poor proxy for real-world task progress.

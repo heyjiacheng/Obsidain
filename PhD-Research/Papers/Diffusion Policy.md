@@ -92,8 +92,6 @@ Evaluated on **15 tasks across 4 benchmarks** (Robomimic, Push-T, BlockPush, Fra
 ## My Ideas
 
 - Can diffusion policy be combined with [[world models]] to reduce demonstration data requirements?
-- The connection to LQR / control theory (Sec 4.5) suggests potential for incorporating known dynamics priors
-- CLIP-pretrained ViT finetuning reaching 98% with only 50 epochs — worth exploring for low-data regimes
 - How does diffusion policy interact with online RL fine-tuning (e.g., DPPO)?
 
 ## Connections
