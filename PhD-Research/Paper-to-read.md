@@ -27,3 +27,9 @@ Generalizable Humanoid Loco-Manipulation
 RSS 2026:
 Emergence of Human to Robot Transfer in Vision-Language-Action Models
 Causal World Modeling for Robot Control
+
+human object interaction Dataset:
+BEHAVE, HUMOTO, HOSIG
+
+From Anna:
+HUMAN MOTION DIFFUSION MODEL

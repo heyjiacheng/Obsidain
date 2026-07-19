@@ -24,6 +24,8 @@ VLA models achieve strong results in training environments but fail to generaliz
 
 ## Key Idea
 
+VLM out put subtask and action part in the same time. first m is text token, later H is action.
+
 Co-train a single VLA model on **heterogeneous data sources** — other robot embodiments, web data, high-level semantic prediction, and verbal language supervision — to enable broad open-world generalization, even when target-domain data (mobile manipulators in homes) is scarce.
 
 > [!info] Data mixture
