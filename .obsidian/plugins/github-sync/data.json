@@ -1,7 +1,9 @@
 {
-  "remoteURL": "https://github.com/heyjiacheng/Obsidain.git",
+  "remoteURL": "git@github.com:heyjiacheng/Obsidain.git",
   "gitLocation": "",
   "syncinterval": 0,
   "isSyncOnLoad": true,
-  "checkStatusOnLoad": true
+  "checkStatusOnLoad": true,
+  "noticeLevel": "ALL",
+  "showSyncSuccessNotice": true
 }
