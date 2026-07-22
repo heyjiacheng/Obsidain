@@ -15,10 +15,8 @@ aliases: []
 (how?)
 # Limitation
 (leave blank)
-# Summary
-(make it the takeaway, not a recap of the other section)
 # Connections
 (1–3 related papers, each tagged: builds-on / competes-with / contradicts / is-baseline-for)
 
 ------
-Summarize this paper in exactly this format. One short, plain sentence for Research Question, Motivation, Method and Summary. Leave Limitation blank. Connections is a short list.
+Summarize this paper in exactly this format. One short, plain sentence for Research Question, Motivation and Method. Leave Limitation blank. Connections is a short list.
